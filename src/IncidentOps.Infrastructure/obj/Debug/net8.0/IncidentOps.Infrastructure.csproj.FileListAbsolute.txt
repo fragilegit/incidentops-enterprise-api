@@ -1,0 +1,17 @@
+/app/IncidentOps.Infrastructure/bin/Debug/net8.0/IncidentOps.Infrastructure.deps.json
+/app/IncidentOps.Infrastructure/bin/Debug/net8.0/IncidentOps.Infrastructure.dll
+/app/IncidentOps.Infrastructure/bin/Debug/net8.0/IncidentOps.Infrastructure.pdb
+/app/IncidentOps.Infrastructure/bin/Debug/net8.0/IncidentOps.Application.dll
+/app/IncidentOps.Infrastructure/bin/Debug/net8.0/IncidentOps.Domain.dll
+/app/IncidentOps.Infrastructure/bin/Debug/net8.0/IncidentOps.Application.pdb
+/app/IncidentOps.Infrastructure/bin/Debug/net8.0/IncidentOps.Domain.pdb
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/IncidentOps.Infrastructure.csproj.AssemblyReference.cache
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/IncidentOps.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/IncidentOps.Infrastructure.AssemblyInfoInputs.cache
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/IncidentOps.Infrastructure.AssemblyInfo.cs
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/IncidentOps.Infrastructure.csproj.CoreCompileInputs.cache
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/Incident.650C9BDB.Up2Date
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/IncidentOps.Infrastructure.dll
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/refint/IncidentOps.Infrastructure.dll
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/IncidentOps.Infrastructure.pdb
+/app/IncidentOps.Infrastructure/obj/Debug/net8.0/ref/IncidentOps.Infrastructure.dll

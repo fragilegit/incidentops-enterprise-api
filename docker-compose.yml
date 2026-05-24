@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: incidentops-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: incidentops
+      POSTGRES_USER: incidentops_user
+      POSTGRES_PASSWORD: incidentops_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: incidentops-api
+    working_dir: /app
+    volumes:
+      - ./src:/app
+    ports:
+      - "5000:5000"
+    environment:
+      ASPNETCORE_URLS: http://+:5000
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=incidentops;Username=incidentops_user;Password=incidentops_password
+    depends_on:
+      - postgres
+    command: tail -f /dev/null
+
+  node-notification-service:
+    image: node:22-alpine
+    container_name: incidentops-node-notifications
+    working_dir: /app
+    volumes:
+      - ./node-notification-service:/app
+    ports:
+      - "4000:4000"
+    command: tail -f /dev/null
+
+volumes:
+  postgres_data:

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ClpsXXV5xE49+RcmEJ2421A6wWv4RkJHw5GczcfdJw4=",
+  "Source": "IncidentOps.Api",
+  "BasePath": "_content/IncidentOps.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

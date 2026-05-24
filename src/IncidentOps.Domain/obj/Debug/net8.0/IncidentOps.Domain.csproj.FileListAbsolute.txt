@@ -1,0 +1,11 @@
+/app/IncidentOps.Domain/bin/Debug/net8.0/IncidentOps.Domain.deps.json
+/app/IncidentOps.Domain/bin/Debug/net8.0/IncidentOps.Domain.dll
+/app/IncidentOps.Domain/bin/Debug/net8.0/IncidentOps.Domain.pdb
+/app/IncidentOps.Domain/obj/Debug/net8.0/IncidentOps.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/app/IncidentOps.Domain/obj/Debug/net8.0/IncidentOps.Domain.AssemblyInfoInputs.cache
+/app/IncidentOps.Domain/obj/Debug/net8.0/IncidentOps.Domain.AssemblyInfo.cs
+/app/IncidentOps.Domain/obj/Debug/net8.0/IncidentOps.Domain.csproj.CoreCompileInputs.cache
+/app/IncidentOps.Domain/obj/Debug/net8.0/IncidentOps.Domain.dll
+/app/IncidentOps.Domain/obj/Debug/net8.0/refint/IncidentOps.Domain.dll
+/app/IncidentOps.Domain/obj/Debug/net8.0/IncidentOps.Domain.pdb
+/app/IncidentOps.Domain/obj/Debug/net8.0/ref/IncidentOps.Domain.dll
