@@ -35,7 +35,8 @@ services:
       - ./node-notification-service:/app
     ports:
       - "4000:4000"
-    command: tail -f /dev/null
+    # command: tail -f /dev/null
+    command: sh -c "npm install && node server.js"
 
 volumes:
   postgres_data:
