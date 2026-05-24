@@ -2,6 +2,8 @@ using IncidentOps.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using IncidentOps.Application.Interfaces;
 using IncidentOps.Infrastructure.Repositories;
+using IncidentOps.Api.Middleware;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,9 +36,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.MapHealthChecks("/health");
+
 app.Run();
