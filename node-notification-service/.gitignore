@@ -1,6 +1,6 @@
-# Build artifacts
-**/bin/
-**/obj/
+# Node
+node_modules/
+npm-debug.log
 
 # Docker
 postgres_data/

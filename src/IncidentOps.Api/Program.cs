@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IIncidentRepository, IncidentRepository>();
+builder.Services.AddHttpClient();
 
 builder.Services.AddMediatR(cfg =>
 {
