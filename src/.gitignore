@@ -1,0 +1,21 @@
+# Build artifacts
+**/bin/
+**/obj/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Docker
+postgres_data/
+
+# Environment
+.env
+.env.*
+
+# Rider / VSCode
+.idea/
+.vscode/
+
+# Mac
+.DS_Store
