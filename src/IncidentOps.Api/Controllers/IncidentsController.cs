@@ -42,4 +42,30 @@ public class IncidentsController : ControllerBase
 
         return Ok(incidents);
     }
+
+    [HttpPut("{id}/assign")]
+    public async Task<IActionResult> Assign(
+        Guid id,
+        AssignIncidentRequest request)
+    {
+        var incident = await _repository.GetByIdAsync(id);
+
+        if (incident is null)
+        {
+            return NotFound();
+        }
+
+        incident.Assign(request.UserId);
+
+        await _repository.AddAuditLogAsync(
+            new AuditLog(
+                incident.Id,
+                $"Incident assigned to user {request.UserId}"
+            )
+        );
+
+        await _repository.SaveChangesAsync();
+
+        return Ok(incident);
+    }
 }

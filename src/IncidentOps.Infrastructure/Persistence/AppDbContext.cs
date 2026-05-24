@@ -11,6 +11,7 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Incident> Incidents => Set<Incident>();
+    public DbSet<AuditLog> AuditLogs => Set<AuditLog>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -39,6 +40,15 @@ public class AppDbContext : DbContext
             entity.Property(x => x.Status)
                 .HasConversion<string>()
                 .IsRequired();
+        });
+
+        modelBuilder.Entity<AuditLog>(entity =>
+        {
+            entity.HasKey(x => x.Id);
+
+            entity.Property(x => x.Action)
+                .IsRequired()
+                .HasMaxLength(500);
         });
     }
 }

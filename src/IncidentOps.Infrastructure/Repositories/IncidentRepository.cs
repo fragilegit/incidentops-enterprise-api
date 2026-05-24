@@ -26,6 +26,17 @@ public class IncidentRepository : IIncidentRepository
             .ToListAsync();
     }
 
+     public async Task<Incident?> GetByIdAsync(Guid id)
+    {
+        return await _context.Incidents
+            .FirstOrDefaultAsync(x => x.Id == id);
+    }
+
+    public async Task AddAuditLogAsync(AuditLog log)
+    {
+        await _context.AuditLogs.AddAsync(log);
+    }
+    
     public async Task SaveChangesAsync()
     {
         await _context.SaveChangesAsync();
